@@ -1,3 +1,4 @@
+import 'package:display/FlipDisplayString.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -100,6 +101,8 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            FlipDisplayString.numeric(length: 5, text: _counter),
+
           ],
         ),
       ),
