@@ -2,7 +2,7 @@
 
 import 'dart:math';
 
-import 'package:display/FlipDisplayElement.dart';
+import 'package:display/flip/FlipDisplayElement.dart';
 import 'package:flutter/material.dart';
 
 enum FlipTextAlign {
@@ -60,7 +60,7 @@ class FlipDisplayString extends StatelessWidget {
   }) :
     this(
       length: length,
-      characters: text.toString().split(''),
+      characters: text.split(''),
       alphabet: [
         ' ',
         for (int i = 'A'.codeUnitAt(0); i <= 'Z'.codeUnitAt(0); i++) String.fromCharCode(i),
